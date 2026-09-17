@@ -129,7 +129,116 @@ fn main() {
     //     println!("Minor");
     // }
 
-    let age = 22;
-    let status = if age >= 18 { "Adult" } else { "Minor" };
-    println!("{}",status);
+    // let age = 22;
+    // let status = if age >= 18 { "Adult" } else { "Minor" };
+    // println!("{}",status);
+
+    // println!("========================");
+    // println!("       RUST ATM");
+    // println!("========================");
+
+    // let mut  balance = 5000;
+    // println!("Balance: {}",balance);
+    // let withdrawal = 2000;
+    // println!("Enter withdrawal amount: {}",withdrawal);
+    // balance = balance-withdrawal;
+    // println!("Withdrawal successful!");
+    // println!("Remaining balance: {}",balance);
+
+    // let mut balance:i32 = 5000;
+    // let withdrawal:i32 = 2000;
+
+    // if withdrawal == 0 {
+    //     println!("Withdrawal amount cannot be 0");
+    // } else if withdrawal > balance {
+    //     println!(
+    //         "Withdrawal amount is bigger than current balance: {}",
+    //         balance
+    //     );
+    // } else {
+    //     balance = balance - withdrawal;
+
+    //     println!("Withdrawal successful!");
+    //     println!("Remaining balance: {}", balance);
+    // }
+    // let mut count: isize = 1;
+    // loop {
+    //     if count > 10 {
+    //         break;
+    //     }
+    //     println!("Heloo world, {}", count);
+    //     count += 1;
+    // }
+
+    // while count <= 5 {
+    //     println!("{}", count);
+    //     count += 1;
+    // }
+
+    // for number in 1..=6  {
+    //     println!("{}",number)
+    // }
+    // let mut balance: i32 = 5000;
+    // let withdrawal: i32 = 200;
+    // let deposit: i32 = 3000;
+
+    // let input: i32 = 1;
+
+    // println!("========================");
+    // println!("       RUST ATM");
+    // println!("========================");
+
+    // loop {
+    //     if input == 1 {
+    //         println!("Current Balance: {}", balance);
+    //         break;
+    //     } else if input == 2 {
+    //         if withdrawal == 0 {
+    //             println!("Withdrawal amount is 0");
+    //         } else if withdrawal > balance {
+    //             println!("Withdrawal amount is bigger than balance");
+    //         } else {
+    //             balance -= withdrawal;
+    //             println!("Balance: {}", balance);
+    //             break;
+    //         }
+    //     } else if input == 3 {
+    //         balance += deposit;
+    //         println!("Balance: {}", balance);
+    //         break;
+    //     } else if input == 4 {
+    //         println!("Exited");
+    //         break;
+    //     } else {
+    //         println!("Invalid choice");
+    //         break;
+    //     }
+    // }
+
+    //while loop
+    // let mut count: i32 = 1;
+    // while count <= 10 {
+    //     println!("{}", count);
+    //     count += 1
+    // }
+    // let int: i32 = 2;
+    // double(int);
+    // countdown(5);
+
+    
 }
+
+// fn double(mut a: i32) {
+//     while a <= 100 {
+//         println!("{}", a);
+//         a += a;
+//     }
+// }
+
+// fn countdown(mut n: i32) {
+//     while n > 0 {
+//         println!("{}", n);
+//         n -= 1;
+//     }
+//     println!("Blast off! 🚀")
+// }
