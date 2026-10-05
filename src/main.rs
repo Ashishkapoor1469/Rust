@@ -121,112 +121,119 @@
 //    age+1
 // }
 
-fn main() {
-    // let age =22;
-    // if age>=18{
-    //     println!("Adult");
-    // }else {
-    //     println!("Minor");
-    // }
+// fn main() {
+// let age =22;
+// if age>=18{
+//     println!("Adult");
+// }else {
+//     println!("Minor");
+// }
 
-    // let age = 22;
-    // let status = if age >= 18 { "Adult" } else { "Minor" };
-    // println!("{}",status);
+// let age = 22;
+// let status = if age >= 18 { "Adult" } else { "Minor" };
+// println!("{}",status);
 
-    // println!("========================");
-    // println!("       RUST ATM");
-    // println!("========================");
+// println!("========================");
+// println!("       RUST ATM");
+// println!("========================");
 
-    // let mut  balance = 5000;
-    // println!("Balance: {}",balance);
-    // let withdrawal = 2000;
-    // println!("Enter withdrawal amount: {}",withdrawal);
-    // balance = balance-withdrawal;
-    // println!("Withdrawal successful!");
-    // println!("Remaining balance: {}",balance);
+// let mut  balance = 5000;
+// println!("Balance: {}",balance);
+// let withdrawal = 2000;
+// println!("Enter withdrawal amount: {}",withdrawal);
+// balance = balance-withdrawal;
+// println!("Withdrawal successful!");
+// println!("Remaining balance: {}",balance);
 
-    // let mut balance:i32 = 5000;
-    // let withdrawal:i32 = 2000;
+// let mut balance:i32 = 5000;
+// let withdrawal:i32 = 2000;
 
-    // if withdrawal == 0 {
-    //     println!("Withdrawal amount cannot be 0");
-    // } else if withdrawal > balance {
-    //     println!(
-    //         "Withdrawal amount is bigger than current balance: {}",
-    //         balance
-    //     );
-    // } else {
-    //     balance = balance - withdrawal;
+// if withdrawal == 0 {
+//     println!("Withdrawal amount cannot be 0");
+// } else if withdrawal > balance {
+//     println!(
+//         "Withdrawal amount is bigger than current balance: {}",
+//         balance
+//     );
+// } else {
+//     balance = balance - withdrawal;
 
-    //     println!("Withdrawal successful!");
-    //     println!("Remaining balance: {}", balance);
-    // }
-    // let mut count: isize = 1;
-    // loop {
-    //     if count > 10 {
-    //         break;
-    //     }
-    //     println!("Heloo world, {}", count);
-    //     count += 1;
-    // }
+//     println!("Withdrawal successful!");
+//     println!("Remaining balance: {}", balance);
+// }
+// let mut count: isize = 1;
+// loop {
+//     if count > 10 {
+//         break;
+//     }
+//     println!("Heloo world, {}", count);
+//     count += 1;
+// }
 
-    // while count <= 5 {
-    //     println!("{}", count);
-    //     count += 1;
-    // }
+// while count <= 5 {
+//     println!("{}", count);
+//     count += 1;
+// }
 
-    // for number in 1..=6  {
-    //     println!("{}",number)
-    // }
-    // let mut balance: i32 = 5000;
-    // let withdrawal: i32 = 200;
-    // let deposit: i32 = 3000;
+// for number in 1..=6  {
+//     println!("{}",number)
+// }
+// let mut balance: i32 = 5000;
+// let withdrawal: i32 = 200;
+// let deposit: i32 = 3000;
 
-    // let input: i32 = 1;
+// let input: i32 = 1;
 
-    // println!("========================");
-    // println!("       RUST ATM");
-    // println!("========================");
+// println!("========================");
+// println!("       RUST ATM");
+// println!("========================");
 
-    // loop {
-    //     if input == 1 {
-    //         println!("Current Balance: {}", balance);
-    //         break;
-    //     } else if input == 2 {
-    //         if withdrawal == 0 {
-    //             println!("Withdrawal amount is 0");
-    //         } else if withdrawal > balance {
-    //             println!("Withdrawal amount is bigger than balance");
-    //         } else {
-    //             balance -= withdrawal;
-    //             println!("Balance: {}", balance);
-    //             break;
-    //         }
-    //     } else if input == 3 {
-    //         balance += deposit;
-    //         println!("Balance: {}", balance);
-    //         break;
-    //     } else if input == 4 {
-    //         println!("Exited");
-    //         break;
-    //     } else {
-    //         println!("Invalid choice");
-    //         break;
-    //     }
-    // }
+// loop {
+//     if input == 1 {
+//         println!("Current Balance: {}", balance);
+//         break;
+//     } else if input == 2 {
+//         if withdrawal == 0 {
+//             println!("Withdrawal amount is 0");
+//         } else if withdrawal > balance {
+//             println!("Withdrawal amount is bigger than balance");
+//         } else {
+//             balance -= withdrawal;
+//             println!("Balance: {}", balance);
+//             break;
+//         }
+//     } else if input == 3 {
+//         balance += deposit;
+//         println!("Balance: {}", balance);
+//         break;
+//     } else if input == 4 {
+//         println!("Exited");
+//         break;
+//     } else {
+//         println!("Invalid choice");
+//         break;
+//     }
+// }
 
-    //while loop
-    // let mut count: i32 = 1;
-    // while count <= 10 {
-    //     println!("{}", count);
-    //     count += 1
-    // }
-    // let int: i32 = 2;
-    // double(int);
-    // countdown(5);
+//while loop
+// let mut count: i32 = 1;
+// while count <= 10 {
+//     println!("{}", count);
+//     count += 1
+// }
+// let int: i32 = 2;
+// double(int);
+// countdown(5);
 
-    
-}
+//for loop
+
+// for i in 1..=6{
+//     println!("{}",i)
+// }
+
+// multiplication_table(5)
+
+// }
 
 // fn double(mut a: i32) {
 //     while a <= 100 {
@@ -242,3 +249,79 @@ fn main() {
 //     }
 //     println!("Blast off! 🚀")
 // }
+
+// fn multiplication_table(n: i32) {
+//    for i in 1..11  {
+//        println!("{}*{}={}",n,i,n*i)
+//    }
+// }
+
+// Array and Vec
+fn main() {
+    //   let number = [10,20,30,40,50];
+
+    // let numbers = [0; 5];//[0, 0, 0, 0, 0]
+
+    // let mut numbers = [10, 20, 30];
+
+    // numbers[1] = 99;
+
+    // println!("{:?}", numbers);  // {:?} for print arr
+
+    // let mut number = Vec::new();
+    // number.push(10);
+    // number.push(20);
+    // println!("{:?}",number)
+
+    // let mut marks = [70, 85, 90, 65, 95];
+
+    // println!("first :{}", marks[0]);
+    // marks[3] = 75;
+    // println!("{:?}", marks);
+    // println!("{}", marks.len());
+    // for mark in marks {
+    //     println!("{}", mark)
+    // }
+
+    // tuples all type of data store not like array which store similar type of data
+    // let student:(&str,i32,f32,bool) = ("Ashish kapoor",22,5.7,true);
+    // println!("Your name: {}", student.0);
+    // println!("Your age: {}", student.1);
+    // println!("Your height: {}", student.2);
+    // println!("Whether you are a student: {}",student.3);
+
+    // Vector
+
+    // let mut numbers = Vec::new();
+
+    // numbers.push(10);
+    // numbers.push(20);
+    // numbers.push(30);
+
+    // println!("{:?}", numbers);
+
+    // let mut numbers = vec![23, 5, 6, 7];
+    // numbers.push(90);
+    // println!("{:?}", numbers);
+
+//     let mut numbers = vec![23, 5, 6, 7];
+//    let remove = numbers.pop();
+//     println!("{:?}", numbers);
+//   println!("{:?}",remove);
+
+    // let mut numbers = vec![23, 5, 6, 7];
+    // numbers.push(90);
+    // println!("{:?}", numbers.len());
+
+
+    let numbers = vec![10, 20, 30, 40];
+
+for number in numbers {
+    println!("{}", number);
+}
+
+
+
+
+
+}
