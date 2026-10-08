@@ -60,3 +60,26 @@ println!("{}", numbers[2]);
 let numbers = vec![10, 20, 30];
 
 println!("{}", numbers.len());
+
+
+
+
+Why is Vec important for AshOS?
+
+
+
+processes
+drivers
+devices
+memory regions
+tasks
+files
+
+
+
+let mut processes = Vec::new();
+
+processes.push(process1);
+processes.push(process2);
+processes.push(process3);
+

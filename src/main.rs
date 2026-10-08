@@ -257,71 +257,170 @@
 // }
 
 // Array and Vec
-fn main() {
-    //   let number = [10,20,30,40,50];
+// fn main() {
+//   let number = [10,20,30,40,50];
 
-    // let numbers = [0; 5];//[0, 0, 0, 0, 0]
+// let numbers = [0; 5];//[0, 0, 0, 0, 0]
 
-    // let mut numbers = [10, 20, 30];
+// let mut numbers = [10, 20, 30];
 
-    // numbers[1] = 99;
+// numbers[1] = 99;
 
-    // println!("{:?}", numbers);  // {:?} for print arr
+// println!("{:?}", numbers);  // {:?} for print arr
 
-    // let mut number = Vec::new();
-    // number.push(10);
-    // number.push(20);
-    // println!("{:?}",number)
+// let mut number = Vec::new();
+// number.push(10);
+// number.push(20);
+// println!("{:?}",number)
 
-    // let mut marks = [70, 85, 90, 65, 95];
+// let mut marks = [70, 85, 90, 65, 95];
 
-    // println!("first :{}", marks[0]);
-    // marks[3] = 75;
-    // println!("{:?}", marks);
-    // println!("{}", marks.len());
-    // for mark in marks {
-    //     println!("{}", mark)
-    // }
+// println!("first :{}", marks[0]);
+// marks[3] = 75;
+// println!("{:?}", marks);
+// println!("{}", marks.len());
+// for mark in marks {
+//     println!("{}", mark)
+// }
 
-    // tuples all type of data store not like array which store similar type of data
-    // let student:(&str,i32,f32,bool) = ("Ashish kapoor",22,5.7,true);
-    // println!("Your name: {}", student.0);
-    // println!("Your age: {}", student.1);
-    // println!("Your height: {}", student.2);
-    // println!("Whether you are a student: {}",student.3);
+// tuples all type of data store not like array which store similar type of data
+// let student:(&str,i32,f32,bool) = ("Ashish kapoor",22,5.7,true);
+// println!("Your name: {}", student.0);
+// println!("Your age: {}", student.1);
+// println!("Your height: {}", student.2);
+// println!("Whether you are a student: {}",student.3);
 
-    // Vector
+// Vector
 
-    // let mut numbers = Vec::new();
+// let mut numbers = Vec::new();
 
-    // numbers.push(10);
-    // numbers.push(20);
-    // numbers.push(30);
+// numbers.push(10);
+// numbers.push(20);
+// numbers.push(30);
 
-    // println!("{:?}", numbers);
+// println!("{:?}", numbers);
 
-    // let mut numbers = vec![23, 5, 6, 7];
-    // numbers.push(90);
-    // println!("{:?}", numbers);
+// let mut numbers = vec![23, 5, 6, 7];
+// numbers.push(90);
+// println!("{:?}", numbers);
 
 //     let mut numbers = vec![23, 5, 6, 7];
 //    let remove = numbers.pop();
 //     println!("{:?}", numbers);
 //   println!("{:?}",remove);
 
-    // let mut numbers = vec![23, 5, 6, 7];
-    // numbers.push(90);
-    // println!("{:?}", numbers.len());
+// let mut numbers = vec![23, 5, 6, 7];
+// numbers.push(90);
+// println!("{:?}", numbers.len());
+
+//     let numbers = vec![10, 20, 30, 40];
+
+// for number in numbers {
+//     println!("{}", number);
+// }
+
+//     let mut cart = Vec::new();
+
+//     cart.push("Laptop");
+//     cart.push("Mouse");
+//     cart.push("Keyboard");
+//     cart.push("Monitor");
+//     println!("{:?}", cart);
+//     println!("Cart items:{:?}", cart.len());
+// cart.push("Headphones");
+// println!("{:?}",cart);
+// let poped = cart.remove(1);
+// println!("Poped element: {:?}",poped);
+
+// println!("{:?}",cart);
+// for item in cart{
+//     println!("{}",item)
+// }
+
+// let os_name: &str = "AshOS";
+// let version: &str = "1.0.0";
+// println!("OS: {} version: {}", os_name, version);
+
+// }
+
+// fn main() {
+    // let mut name = String::new();
+    // name.push_str("string"); //push full string
+    // println!("{}", name);
+
+    //  let mut username = String::from("Ashish");
+    // username.push('s'); //push single char
+    // println!("{}", username);
+
+    //-----------------------converstion----------------------
+
+    // &str → String
+
+    //-------Case 1-----------//
+    // let name = "Ashish";
+
+    // let mut owned_name = name.to_string();
+    // owned_name.push_str(" kapoor");
+    // println!("{}",owned_name)
+
+    //-------Case 2-----------//
+
+    // let name = "Ashish";
+
+    // let mut owned_name = String::from(name);
+    // owned_name.push_str(" kapoor");
+    // println!("{}",owned_name)
+
+    // String → &str
+
+    // let name = String::from("Ashish");
+
+    // let owned_name = &name;
+
+    // println!("{}",owned_name)
+
+    // let mut  os = build_os_name("Ash");
+    // os.push_str("OS");
+    // println!("{}",os)
 
 
-    let numbers = vec![10, 20, 30, 40];
+   
+// }
 
-for number in numbers {
-    println!("{}", number);
+// fn build_os_name(name: &str) -> String {
+// return String::from(name);
+  
+// }
+
+//--------------- Rust — Ownership -----------------//
+ 
+fn main() {
+    // let name = String::from("Ashish");  //Every piece of data in Rust has an owner.
+
+    // let name2 = name;   //name2 owns name data now name is no longer accessable 
+
+    // println!("{}", name); if i use name2 it work but not name because now name2 hold the value that name hold and after wirtw name2 = name the name relase there value and give it to name2 now name is empty not usable 
+
+
+
+// not in case of integer but 
+
+
+// let age = 20;
+// let age2 = age;
+// println!("{}",age);
+// println!("{}",age2)
+
+
+
+// if need acutal copy use clone() method 
+   let name = String::from("Ashish"); 
+
+    let name2 = name.clone(); //copy
+
+    println!("1{} 2{}", name,name2);
+
+
+
 }
 
-
-
-
-
-}
